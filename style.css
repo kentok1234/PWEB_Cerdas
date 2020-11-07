@@ -1,103 +1,57 @@
-ul {
-    list-style-type: none;
-    position: absolute;
-    width: 1366px;
-    height: 104px;
-    left: 0px;
-    top: 0px;
-    background: #C4C4C4;
-  }
-  
-li {
-    float: left;
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-li a.produk {
-    position: absolute;
-    width: 50px;
-    height: 16px;
-    left: 261px;
-    top: 44px;
-}
-
-img.segitiga {
-    position: absolute;
-    width: 6px;
-    height: 3px;
-    left: 312px;
-    top: 52px;
-
-}
-li a.kelas {
-    position: absolute;
-    width: 86px;
-    height: 16px;
-    left: 338px;
-    top: 44px;
-}
-
-li a.materi {
-    position: absolute;
-    width: 45px;
-    height: 16px;
-    left: 444px;
-    top: 44px;
-}
-
-li a.blog {
-    position: absolute;
-    width: 31px;
-    height: 16px;
-    left: 509px;
-    top: 44px;
-}
-li a.regist1  {
-    border: 2px;
-    position: absolute;
-    width: 110px;
-    height: 40px;
-    left: 1162px;
-    top: 32px;
-    background: #2F2424;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 0.07em;
-    color:white
-}
-
-li a.login{
-    position: absolute;
-    width: 46px;
-    height: 16px;
-    left: 1096px;
-    top: 44px;
-}
-
-li a {
-    display: block;
-    color: black;
-    text-align: center;
+a {
     text-decoration: none;
-    font-family: Roboto;
-    font-style: normal;
+}
+ul {
+    list-style: none;
+}
+.clear {
+    clear: both;
+}
+body {
+    background-color: #F6F5F5;
+}
+.container {
+    padding:60px 94px;
+}
+#text-header {
+    width: 645px;
+    float: left;
+    text-align: left;
+}
+#text-header h1 {
+    font-size: 48px;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
     letter-spacing: 0.07em;
-  }
-li a.active {
-    position: absolute;
-    width: 127px;
-    height: 51px;
-    left: 94px;
-    top: 26px;
-    font-family: Coda;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 51px;
-    letter-spacing: 0.07em;
-    color: #000000;
-  }
+}
+#text-header p {
+    font-family: 'Spartan', sans-serif;
+    font-size: 18px;
+    line-height: 125%;
+    color: #333333;
+    width: 634px; margin-top: 60px;
+}
+.bold {
+    font-weight: bold;
+}
+header img {
+    width: 461px; height: 292px;
+    float: right;
+}
+#text-header a {
+    margin-top: 80px;
+    background-color: #00334E;
+}
+.btn {
+    width: 200px; height: 40px;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 8px;
+    display: inline-block;
+}

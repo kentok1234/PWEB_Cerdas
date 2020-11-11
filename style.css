@@ -64,8 +64,9 @@ nav ul li a {
 body {
     background-color: #F6F5F5;
 }
-.container {
-    padding:60px 94px;
+header {
+    padding:60px 94px 94px 94px;
+    width : 1366px;
 }
 #text-header {
     width: 645px;
@@ -102,4 +103,95 @@ header img {
     text-align: center;
     border-radius: 8px;
     display: inline-block;
+}
+#main1 {
+    width: 1366px;
+    padding: 68px 94px 70px 94px;
+    background-color: #00334E;
+    color: #F6F5F5;
+}
+#main1 img{
+    width: 358px;
+    margin-top: 2%;
+}
+.artikel1, .artikel2 {
+    margin-bottom: 100px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+div.left {
+    text-align: left;
+}
+div.right {
+    text-align: right;
+}
+div.left, div.right {
+    width: 589px;
+}
+div.left h1, div.right h1 {
+    font-size: 36px;
+    letter-spacing: 0.07em;
+    margin-bottom: 30px;
+}
+div.left p, div.right p {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    line-height: 180%;
+}
+#main2 {
+    width: 1366px;
+    padding: 44px 94px 116px 94px;
+}
+.judulmain2 {
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 0.1em;
+}
+.judulmain2 h1 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.judulmain2 p {
+    font-size: 18px;
+    font-weight: 300;
+}
+/* .img-matkul {
+    height: ;
+} */
+#main2 img {
+    width: 100%;
+}
+.listMatkul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.img-matkul {
+    height: 180px;
+}
+.item-matkul {
+    width: 180px;
+    height: 232px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.item-matkul p {
+    margin-top:30px;
+}
+.bottommain2 p {
+    text-align: center;
+    width: 747px;
+    margin:0 auto;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    line-height: 180%;
 }

@@ -311,3 +311,21 @@ div.left p, div.right p {
     margin-left: auto;
     background-color: #EE6F57;
 }
+footer {
+    width:1366px;
+    padding: 30px 94px;
+    font-size: 18px;
+    background-color: #00334E;
+}
+footer a {
+    display: inline-block;
+    color: #F6F5F5;
+    letter-spacing: 0.07em;
+    margin-right: 30px;
+}
+footer p {
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 0.07em;
+    color: #F6F5F5;
+}

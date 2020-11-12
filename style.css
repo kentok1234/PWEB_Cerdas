@@ -196,3 +196,63 @@ div.left p, div.right p {
     letter-spacing: 0.1em;
     line-height: 180%;
 }
+.mentormain {
+    width:1366px;
+    background-image: url('img/lycs-architecture-U2BI3GMnSSE-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #F6F5F5;
+    position: relative;
+}
+.main3 {
+    width: 100%;
+    padding: 70px 94px 100px 94px;
+    background: linear-gradient(105.28deg, #00334E 11.46%, rgba(0, 51, 78, 0.8) 11.46%, rgba(20, 83, 116, 0.8) 95.96%);
+    position: relative;
+}
+.main3 h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 81px;
+}
+
+.panah-kiri {
+    position: absolute;
+    left:40px;
+    top:50%;
+}
+.panah-kanan {
+    position: absolute;
+    top:50%;
+    right: 40px;
+}
+.tentor img {
+    width: 280px; height: 280px;
+    float: left;
+    border-radius: 50%;
+}
+.biotentor {
+    display: inline-block;
+    margin-left: 90px;
+}
+.biotentor h2{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    line-height: 180%;
+}
+.biotentor span {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.biotentor p {
+    width: 800px;
+    margin-top: 40px;
+    font-size: 48px;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    opacity: 0.5;
+}

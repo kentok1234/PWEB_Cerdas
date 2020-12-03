@@ -23,21 +23,21 @@ header {
     color: black;
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
-ul {
+header ul {
     list-style-type: none;
     margin-left: 2em;
 }
-nav ul li {
+header nav ul li {
     display: inline-block;
     margin-right: 20px;
 }
-nav ul li a {
+header nav ul li a {
     color: black;
     font-size: 14px;
     letter-spacing: 0.07em;
@@ -54,7 +54,7 @@ nav ul li a {
 }
 .login-signup a {
     display: inline-block;
-    width: 110px; height: 40px;
+    width: 110px;
     font-size: 14px;
     letter-spacing: 0.07em;
     padding: 12px 0;
@@ -78,6 +78,7 @@ body {
     display: grid;
     grid-template-columns: 55% auto;
     justify-content: space-between;
+    align-items: center;
 }
 #content-hero {
     text-align: left;
@@ -105,7 +106,7 @@ body {
     background-color: #00334E;
 }
 .btn {
-    width: 200px; height: 40px;
+    width: 200px;
     color: white;
     line-height: 40px;
     text-align: center;
@@ -184,7 +185,6 @@ body {
 }
 .item-matkul {
     width: 180px;
-    height: 232px;
     text-align: center;
     margin-bottom: 50px;
     margin-right: 30px;
@@ -194,8 +194,6 @@ body {
 }
 .bottommain2 p {
     text-align: center;
-    width: 747px;
-    margin:0 auto;
     font-size: 18px;
     font-weight: 300;
     letter-spacing: 0.1em;
@@ -255,7 +253,6 @@ body {
 }
 
 .biotentor p {
-    width: 800px;
     margin-top: 40px;
     font-size: 36px;
     font-style: italic;
@@ -278,10 +275,11 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .testi {
     width: 210px;
+    margin-bottom: 20px;
 }
 .testi img {
     width: 160px; height: 160px;
@@ -290,6 +288,7 @@ body {
     border-radius: 50%;
 }
 .nama-testimoni {
+    display: block;
     font-size: 24px;
     font-weight: 500;
     letter-spacing: 0.1em;

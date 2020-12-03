@@ -7,11 +7,12 @@
 a {
     text-decoration: none;
 }
-
-nav {
+header {
+    display: grid;
+    grid-template-columns: 60% auto;
     background-color: #F6F5F5;
     padding: 32px 94px;
-    width: 1366px;
+    width: 100%;
     height: 104px;
 }
 
@@ -22,10 +23,15 @@ nav {
     color: black;
 }
 
+nav {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
 ul {
     list-style-type: none;
-    display: inline-block;
-    margin-left: 40px;
+    margin-left: 2em;
 }
 nav ul li {
     display: inline-block;
@@ -41,10 +47,12 @@ nav ul li a {
     margin-bottom: 2px;
 }
 
-.nav-right {
-    float: right;
+.login-signup {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
-.nav-right a {
+.login-signup a {
     display: inline-block;
     width: 110px; height: 40px;
     font-size: 14px;
@@ -64,35 +72,35 @@ nav ul li a {
 body {
     background-color: #F6F5F5;
 }
-header {
+.hero {
     padding:60px 94px 94px 94px;
-    width : 1366px;
+    width : 100%;
+    display: grid;
+    grid-template-columns: 55% auto;
+    justify-content: space-between;
 }
-#text-header {
-    width: 645px;
-    float: left;
+#content-hero {
     text-align: left;
 }
-#text-header h1 {
+#content-hero h1 {
     font-size: 48px;
     font-weight: normal;
     letter-spacing: 0.07em;
 }
-#text-header p {
+#content-hero p {
     font-family: 'Spartan', sans-serif;
     font-size: 18px;
     line-height: 125%;
     color: #333333;
-    width: 634px; margin-top: 60px;
+    margin-top: 60px;
 }
 .bold {
     font-weight: bold;
 }
-header img {
+.hero img {
     width: 461px; height: 292px;
-    float: right;
 }
-#text-header a {
+#content-hero a {
     margin-top: 80px;
     background-color: #00334E;
 }
@@ -105,46 +113,46 @@ header img {
     display: inline-block;
 }
 #main1 {
-    width: 1366px;
+    width: 100%;
+    display: grid;
+    grid-row-gap: 100px;
     padding: 68px 94px 70px 94px;
     background-color: #00334E;
     color: #F6F5F5;
 }
-#main1 img{
+.artikel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.artikel:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.artikel img{
     width: 358px;
-    margin-top: 2%;
 }
-.artikel1, .artikel2 {
-    margin-bottom: 100px;
-}
-.left {
-    float: left;
-}
-.right {
-    float: right;
-}
-div.left {
+.text-left {
     text-align: left;
 }
-div.right {
+.text-right {
     text-align: right;
 }
-div.left, div.right {
-    width: 589px;
+.artikel div {
+    flex-basis: 589px;
 }
-div.left h1, div.right h1 {
+.artikel h1{
     font-size: 36px;
     letter-spacing: 0.07em;
     margin-bottom: 30px;
 }
-div.left p, div.right p {
+.artikel p{
     font-size: 18px;
     font-weight: 300;
     letter-spacing: 0.1em;
     line-height: 180%;
 }
 #main2 {
-    width: 1366px;
+    width: 100%;
     padding: 44px 94px 116px 94px;
 }
 .judulmain2 {
@@ -161,9 +169,6 @@ div.left p, div.right p {
     font-size: 18px;
     font-weight: 300;
 }
-/* .img-matkul {
-    height: ;
-} */
 #main2 img {
     width: 100%;
 }
@@ -197,7 +202,7 @@ div.left p, div.right p {
     line-height: 180%;
 }
 .mentormain {
-    width:1366px;
+    width:100%;
     background-image: url('img/lycs-architecture-U2BI3GMnSSE-unsplash.jpg');
     background-size: cover;
     background-position: center;
@@ -205,10 +210,8 @@ div.left p, div.right p {
     position: relative;
 }
 .main3 {
-    width: 100%;
     padding: 70px 94px 100px 94px;
     background: linear-gradient(105.28deg, #00334E 11.46%, rgba(0, 51, 78, 0.8) 11.46%, rgba(20, 83, 116, 0.8) 95.96%);
-    position: relative;
 }
 .main3 h1{
     font-size: 36px;
@@ -227,14 +230,17 @@ div.left p, div.right p {
     top:50%;
     right: 40px;
 }
+.tentor {
+    display: flex;
+    flex-direction: row;
+}
 .tentor img {
     width: 280px; height: 280px;
-    float: left;
     border-radius: 50%;
 }
 .biotentor {
     display: inline-block;
-    margin-left: 90px;
+    margin-left: 25px;
 }
 .biotentor h2{
     font-size: 24px;
@@ -251,13 +257,13 @@ div.left p, div.right p {
 .biotentor p {
     width: 800px;
     margin-top: 40px;
-    font-size: 48px;
+    font-size: 36px;
     font-style: italic;
     letter-spacing: 0.1em;
     opacity: 0.5;
 }
 .testimoni {
-    width: 1366px;
+    width: 100%;
     padding: 70px 94px 60px 94px;
 }
 .testimoni h1{
@@ -312,16 +318,28 @@ div.left p, div.right p {
     background-color: #EE6F57;
 }
 footer {
-    width:1366px;
+    width:100%;
+    display: grid;
+    grid-template-columns: 60% auto;
     padding: 30px 94px;
     font-size: 18px;
     background-color: #00334E;
+}
+footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.social-media {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    justify-content: end;
 }
 footer a {
     display: inline-block;
     color: #F6F5F5;
     letter-spacing: 0.07em;
-    margin-right: 30px;
 }
 footer p {
     margin-top: 20px;

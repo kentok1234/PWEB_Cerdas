@@ -13,7 +13,7 @@
         font-size: 16px;
     }
     .hero {padding: 36px 94px 84px 94px;}
-    .hero img {width: 360px;}
+    .hero img {width: 345px;}
     .btn, .item-matkul, .tentor img, .testi img {
         width: 150px;
     }
@@ -31,4 +31,22 @@
     .social-media {display: none;}
     footer {grid-template-columns: 100%;}
     footer nav {display: block;}
+}
+
+@media only screen and (max-width:768px) {
+    .hero img {
+        width: 260px;
+    }
+        header {padding: 28px 64px;}
+        .hero {padding: 36px 64px 84px 64px;}
+        #main1 {padding: 68px 64px 70px 64px;}
+        #main2 {padding: 44px 64px 80px 64px;}
+        .main3 {padding: 70px 64px;}
+        .testimoni {padding: 70px 64px 60px 64px;}
+        footer {padding: 30px 64px;}
+        .panah-kiri {width: 13px; height: 22px;}
+        .panah-kanan {width: 13px;height: 22px;}
+        .artikel img{
+            width: 206px;
+        }
 }

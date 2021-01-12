@@ -16,7 +16,13 @@
             <ul>
                 <li><a href="" class="mobile-menu"><img src="/img/square.svg" alt=""></a></li>
                 <ul class="menu">
-                    <li><a href="#produk">Produk <img src="img/Vector 2.png" ></a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn" onclick="myFunction()">Produk <img src="img/Vector 2.png" ></button>
+                        <div class="dropdown-content" id="myDropdown">
+                          <a href="#">Regular</a>
+                          <a href="#">Platinum</a>
+                          <a href="#">Diamond</a>
+                        </div>
                     <li><a href="#daftarKelas">Daftar kelas</a></li>
                     <li><a href="#materi">Materi</a></li>
                     <li><a href="#blog">Blog</a></li>
@@ -182,6 +188,6 @@
             </a>
         </div>
     </footer>
-    <!-- <script src="script/main.js"></script> -->
+    <script src="main.js"></script>
 </body>
 </html>

@@ -37,16 +37,77 @@
     .hero img {
         width: 260px;
     }
-        header {padding: 28px 64px;}
-        .hero {padding: 36px 64px 84px 64px;}
-        #main1 {padding: 68px 64px 70px 64px;}
-        #main2 {padding: 44px 64px 80px 64px;}
-        .main3 {padding: 70px 64px;}
-        .testimoni {padding: 70px 64px 60px 64px;}
-        footer {padding: 30px 64px;}
-        .panah-kiri {width: 13px; height: 22px;}
-        .panah-kanan {width: 13px;height: 22px;}
-        .artikel img{
-            width: 206px;
-        }
+    header {padding: 28px 64px;}
+    .hero {padding: 36px 64px 84px 64px;}
+    #main1 {padding: 68px 64px 70px 64px;}
+    #main2 {padding: 44px 64px 80px 64px;}
+    .main3 {padding: 70px 64px;}
+    .testimoni {padding: 70px 64px 60px 64px;}
+    footer {padding: 30px 64px;}
+    .panah-kiri {width: 13px; height: 22px;}
+    .panah-kanan {width: 13px;height: 22px;}
+    .artikel img{
+        width: 206px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .mobile-menu img {display: block;}
+    header {padding: 32px 47px;}
+    header nav {justify-content: flex-end;}
+    header nav ul li {margin: 0;}
+    header nav .logo {font-size: 24px;}
+    header nav .menu {display: none;}
+    header .login-signup {display: none;}
+    /* Font size 24px only */
+    #content-hero h1 {
+        font-size: 24px;
+    }
+    .artikel h1, .judulmain2 h1, .mentormain h1, .testimoni h1 {
+        font-size: 18px;
+    }
+    #content-hero p, .artikel p, .judulmain2 p, .item-matkul p, .bottommain2 p, footer a, footer p {
+        font-size: 12px;
+    }
+    #content-hero p {
+        margin-top: 20px;
+    }
+    #content-hero a {
+        margin-top: 22px;
+    }
+    .hero img {
+        display: none;
+    }
+    .hero {
+        display: block;
+    }
+    .btn {
+        width: 150px;
+        line-height: 25px;
+    }
+    #main1 {
+        grid-row-gap : 20px;
+    }
+    .artikel img {width: 222px;}
+    .artikel h1 {margin-top: 27px;}
+    .hero, #main2, .main3, #main1, .testimoni, footer{
+        padding: 40px 47px;
+    }
+    .item-matkul {width:100px;margin-right: 0;}
+    .img-matkul {height: 120px;}
+    .item-matkul p, .testi p {margin-top: 10px;}
+    .mentormain{background-image: none;}
+    .main3 {background: linear-gradient(140.99deg, #00334E 0%, #145474 100%);}
+    .tentor {flex-wrap: wrap;}
+    .tentor img, .testi img {height: 100px; width: 100px; margin: 0 auto; display: block;}
+    .mentormain h1{margin-bottom: 40px;}
+    .main3 {text-align: center;}
+    .biotentor {margin-left: 0; margin-top: 20px;}
+    .panah-kanan{right: 20px;}
+    .panah-kiri{left: 20px;}
+    .testi {text-align: center;}
+    .nama-testimoni{margin-top: 20px;}
+    footer {display: block;}
+    footer a {display: block; margin-bottom: 20px;}
+    footer p {margin: 0;}
 }

@@ -8,12 +8,18 @@ a {
     text-decoration: none;
 }
 header {
-    display: grid;
-    grid-template-columns: 60% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #F6F5F5;
     padding: 32px 94px;
     width: 100%;
     height: 104px;
+}
+
+.mobile-menu img {
+    display: none;
+    width: 32px; height: 32px;
 }
 
 .logo {
@@ -25,8 +31,9 @@ header {
 
 header nav {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
+    height: 100%; width: 100%;
 }
 
 header ul {
@@ -146,6 +153,7 @@ body {
 .artikel{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
 }
 .artikel:nth-child(even) {
@@ -231,7 +239,7 @@ body {
 }
 .main3 {
     padding: 70px 94px 100px 94px;
-    background: linear-gradient(105.28deg, #00334E 11.46%, rgba(0, 51, 78, 0.8) 11.46%, rgba(20, 83, 116, 0.8) 95.96%);
+    background: linear-gradient(105.28deg, rgba(0, 51, 78, 0.8) 11.46%, rgba(20, 83, 116, 0.8) 95.96%);
 }
 .main3 h1{
     font-size: 36px;

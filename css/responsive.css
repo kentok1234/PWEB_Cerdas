@@ -52,13 +52,33 @@
 }
 
 @media only screen and (max-width:360px) {
-    .mobile-menu img {display: block;}
+    .mobile-menu {display: block;}
+    header ul {margin-left: 0;}
     header {padding: 32px 47px;}
     header nav {justify-content: flex-end;}
     header nav ul li {margin: 0;}
     header nav .logo {font-size: 24px;}
-    header nav .menu {display: none;}
-    header .login-signup {display: none;}
+    .menu {
+        display: none; 
+        width: 100%; 
+        height: 100%; 
+        position: absolute; 
+        left: 0; 
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    .menu ul {
+        display: block;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top:104px;
+    }
+    .menu ul li {
+        display: block;
+        width: 100%;
+    }
+    .login-signup {display: none;}
     /* Font size 24px only */
     #content-hero h1 {
         font-size: 24px;
@@ -110,4 +130,5 @@
     footer {display: block;}
     footer a {display: block; margin-bottom: 20px;}
     footer p {margin: 0;}
+    .active {display: block;}
 }

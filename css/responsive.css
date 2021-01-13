@@ -49,9 +49,10 @@
     .artikel img{
         width: 206px;
     }
+    .artikel {flex-wrap: nowrap;}
 }
 
-@media only screen and (max-width:360px) {
+@media only screen and (max-width:425px) {
     .mobile-menu {display: block;}
     header ul {margin-left: 0;}
     header {padding: 32px 47px;}
@@ -118,7 +119,7 @@
     .item-matkul p, .testi p {margin-top: 10px;}
     .mentormain{background-image: none;}
     .main3 {background: linear-gradient(140.99deg, #00334E 0%, #145474 100%);}
-    .tentor {flex-wrap: wrap;}
+    .tentor, .artikel {flex-wrap: wrap;}
     .tentor img, .testi img {height: 100px; width: 100px; margin: 0 auto; display: block;}
     .mentormain h1{margin-bottom: 40px;}
     .main3 {text-align: center;}

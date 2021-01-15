@@ -5,14 +5,19 @@ let menu_icon = button_menu[0];
 
 // Inisialisasi menu
 let get_menu = document.getElementsByClassName("menu")
-let get_btn_login_signup = document.getElementsByClassName("login-signup");
 let menu = get_menu[0];
-let btn_login_signup = get_btn_login_signup[0];
 
 menu_icon.addEventListener("click", (event) => {
     event.preventDefault();
     console.log('Halo saya di klik', menu_icon);
-    menu.classList.toggle("active");
+    menu.classList.add("active");
+    let closes = document.querySelectorAll(".close");
+    closes.forEach((close) => {
+        close.addEventListener("click", (event) => {
+            event.preventDefault();
+            menu.classList.remove("active");
+        });
+    });
 });
 
 // Non-Mobile
@@ -20,10 +25,10 @@ let have_submenu = document.querySelectorAll(".have-submenu");
 have_submenu.forEach((submenu) => {
     submenu.addEventListener("click", (event) => {
         event.preventDefault();
-        
+
         let item_submenu = document.querySelectorAll(".submenu");
         item_submenu.forEach((item) => {
-            item.classList.toggle("show")
+            item.classList.toggle("active");
         });
     });
 }) ;

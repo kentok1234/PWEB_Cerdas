@@ -63,25 +63,41 @@
         display: none; 
         width: 100%; 
         height: 100%; 
-        position: absolute; 
+        position: fixed; 
         left: 0; 
         top: 0;
+        padding-top: 20%;
         background-color: rgba(255, 255, 255, 0.8);
+        z-index: 5;
     }
     .menu ul {
         display: block;
         width: 100%;
         text-align: center;
-        position: absolute;
-        top:104px;
+        /* position: absolute;
+        top:104px; */
     }
     .menu ul li {
+        padding: 10px 0;
         display: block;
         width: 100%;
     }
-    .login-signup {display: none;}
+    .menu .login-signup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu .login-signup a{
+        display: block;
+    }
+    .submenu {
+        position: relative;
+    }
+    .submenu ul {
+        max-width: 100%;
+    }
     /* Font size 24px only */
-    #content-hero h1 {
+    #content-hero h1, .menu ul li a {
         font-size: 24px;
     }
     .artikel h1, .judulmain2 h1, .mentormain h1, .testimoni h1 {
@@ -131,5 +147,5 @@
     footer {display: block;}
     footer a {display: block; margin-bottom: 20px;}
     footer p {margin: 0;}
-    .active {display: block;}
+    .active, .close {display: block;}
 }

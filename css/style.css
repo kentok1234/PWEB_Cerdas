@@ -54,6 +54,10 @@ header nav ul li a {
 
 .menu {
     position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu img {
@@ -393,7 +397,7 @@ footer p {
     background-color:black;
     border-radius: 10px;
 }
-  
-.show {
-    display: block;
-  }
+
+.close {
+    display: none;
+}

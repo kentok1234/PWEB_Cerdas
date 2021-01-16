@@ -1,4 +1,9 @@
 @media only screen and (max-width:1024px) {
+    /* Register */
+    .right h1 {
+        font-size: 1.5em;
+    }
+    /* End Of Register */
     header {padding: 28px 94px;}
     .logo, .biotentor p, .artikel h1, .judulmain2 h1, .main3 h1, .testimoni h1 {
         font-size: 24px;
@@ -34,6 +39,23 @@
 }
 
 @media only screen and (max-width:768px) {
+    /* Register */
+    .left {
+        display: none;
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .right h1, .right p {
+        text-align: center;
+    }
+    .right form {
+        min-width: 80%;
+    }
+    /* End Of Register */
     .hero img {
         width: 260px;
     }
@@ -97,7 +119,7 @@
         max-width: 100%;
     }
     /* Font size 24px only */
-    #content-hero h1, .menu ul li a {
+    #content-hero h1, .menu ul li a, .login-signup a {
         font-size: 24px;
     }
     .artikel h1, .judulmain2 h1, .mentormain h1, .testimoni h1 {
